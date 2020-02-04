@@ -1,6 +1,13 @@
 * {
   box-sizing: border-box;
 }
+.sectionsizer {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15%;
+}
 html {
   font-size: 62.5%;
 }
@@ -41,60 +48,121 @@ img {
   width: 100%;
   margin: 0 auto;
 }
-nav {
-  text-decoration: none;
-  font-family: 'Lato', sans-serif;
+header {
+  max-width: 100%;
+  height: 80px;
+  padding: 5px;
+  background: #cc5500;
 }
-div.jumbotron {
+.logo {
+  float: left;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  font-size: 2.4em;
+  margin-left: 2%;
+  padding-top: 0.5rem;
+}
+nav {
+  margin-right: 2%;
+}
+.nav-bar {
+  padding: 0;
+  margin: 0;
+  float: right;
+  -webkit-transition: max-height 0.5s;
+  transition: max-height 0.5s;
+}
+.nav-bar li {
+  display: inline-block;
+  padding: 30px 10px;
+}
+.nav-bar a {
+  padding: 5px;
+  text-transform: uppercase;
+  font-size: 1.3em;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: white;
+}
+section.preddictlogo {
   max-width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #868e96;
-  margin-left: 125px;
+  margin: 15%;
+}
+section.preddictlogo img {
+  width: 350px;
+  align-items: center;
 }
 .jumbotron {
   max-width: 100%;
+  flex-direction: column;
+  margin: 15%;
   font-size: 75px;
+  align-items: center;
+  display: flex;
+  background-color: #4E5D6C;
+}
+@media (max-width: 500px) {
+  .jumbotron {
+    margin: 30px;
+  }
+}
+.jumbotron h1.jumbotronheader {
+  display: flex;
+  color: #cc5500;
+  text-align: center;
+}
+.jumbotron p.jumbotronparagraph {
+  color: white;
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+}
+.jumbotron p.jumbotronparagraph2 {
+  color: white;
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+}
+.jumbotron p.lead {
+  max-width: 100%;
+  align-items: center;
+  display: flex;
+  font-size: 2.5rem;
+  cursor: pointer;
+  background: #cc5500;
+  width: 20rem;
+  height: 7rem;
+  padding: 5rem;
+  text-decoration: none;
+  text-align: center;
+  transition-duration: 0.4s;
+}
+.jumbotron a.signupbutton {
+  text-decoration: none;
   display: flex;
   align-items: center;
-}
-h1.jumbotronheader {
-  background: #DF691A;
-  display: flex;
-  color: white;
-  text-align: center;
-}
-p.jumbotronparagraph {
-  border: 1px sold yellow;
-  color: white;
-  display: flex;
-  text-align: center;
-  font-size: 20px;
-}
-p.jumbotronparagraph2 {
-  border: 1px solid green;
-  color: white;
-  display: flex;
-  text-align: center;
-  font-size: 20px;
-}
-p.lead {
-  border: 1px solid red;
-  max-width: 100%;
-  display: flex;
-  background: #DF691A;
-  width: 200px;
-  height: 70px;
-  padding: 20px;
-  text-decoration: none;
-  text-align: center;
-}
-a.btn {
-  border: 1px solid blue;
-  text-decoration: none;
-  display: flex;
   font-size: 25px;
+  margin-left: 3.15rem;
   cursor: pointer;
   color: white;
+  transition-duration: 0.4s;
+}
+.jumbotron p.lead:hover {
+  background-color: white;
+  color: black;
+}
+.jumbotron .companies {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 15%;
+  flex-direction: row;
+}
+.jumbotron .companies img {
+  max-width: 30%;
+  padding: 0.25rem;
 }
