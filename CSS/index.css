@@ -103,14 +103,16 @@ section.preddictlogo img {
   max-width: 100%;
   flex-direction: column;
   margin: 15%;
-  font-size: 75px;
+  font-size: 30px;
   align-items: center;
   display: flex;
   background-color: #4E5D6C;
+  color: white;
 }
 @media (max-width: 500px) {
   .jumbotron {
     margin: 30px;
+    text-align: center;
   }
 }
 .jumbotron h1.jumbotronheader {
