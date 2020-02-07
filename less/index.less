@@ -3,6 +3,10 @@
   }
 // MIXINS
   @mobile: ~"(max-width: 500px)";
+  // Variables
+  @halflifedarkgrey: #2B3E50;
+  @halflifelightgrey: #4E5D6C;
+  @halflifeorange: #DF691A;
   .sectionsizer{
     max-width: 100%;
     display: flex;
@@ -17,7 +21,7 @@
   
   html, body {
     font-family: 'Lato', sans-serif;
-    background-color: #2B3E50;
+    background-color: @halflifedarkgrey;
 }
   
   h1, h2, h3, h4, h5 {
@@ -61,7 +65,7 @@
     max-width: 100%;
     height: 80px;
     padding: 5px;
-    background: #cc5500;
+    background: @halflifeorange;
   }
   
   .logo {
@@ -135,7 +139,7 @@ section.preddictlogo{
     font-size: 30px;
     align-items: center;
     display: flex;
-    background-color: #4E5D6C;
+    background-color: @halflifelightgrey;
     color:white;
 
     @media @mobile {
@@ -145,7 +149,7 @@ section.preddictlogo{
     h1.jumbotronheader{
       // background: #cc5500;
       display:flex;
-      color: #cc5500;
+      color: @halflifeorange;
       text-align: center;
     }
 

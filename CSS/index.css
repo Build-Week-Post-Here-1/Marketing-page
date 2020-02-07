@@ -52,7 +52,7 @@ header {
   max-width: 100%;
   height: 80px;
   padding: 5px;
-  background: #cc5500;
+  background: #DF691A;
 }
 .logo {
   float: left;
@@ -117,7 +117,7 @@ section.preddictlogo img {
 }
 .jumbotron h1.jumbotronheader {
   display: flex;
-  color: #cc5500;
+  color: #DF691A;
   text-align: center;
 }
 .jumbotron p.jumbotronparagraph {
